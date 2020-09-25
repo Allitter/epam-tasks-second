@@ -13,10 +13,9 @@ public class Main {
 
     public static void main(String[] args) throws IncorrectArgumentException, FactoryNotExistsException {
         ArrayReverser arrayReverser = new ArrayReverser();
-        OutputService outputService = OutputServiceFactory.getOutputService("console");
-
         String[] reversed = arrayReverser.reverse(args);
 
+        OutputService outputService = OutputServiceFactory.getOutputService("console");
         outputService.print(reversed);
     }
 

@@ -8,7 +8,7 @@ public class ArrayReverserTest {
     ArrayReverser arrayReverser = new ArrayReverser();
 
     @Test
-    public void positiveTestReverse() throws IncorrectArgumentException {
+    public void testReversePositive() throws IncorrectArgumentException {
         String[] input = {"1", "2", "3", "4"};
         String[] expected = {"4", "3", "2", "1"};
 
