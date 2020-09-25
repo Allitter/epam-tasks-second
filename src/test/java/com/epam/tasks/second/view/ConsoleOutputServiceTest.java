@@ -30,7 +30,7 @@ public class ConsoleOutputServiceTest {
     }
 
     @Test
-    public void printWithString() {
+    public void testPrintWithString() {
         outputService.print(INPUT_MESSAGE);
         String actual = mockOutputStream.getContent();
 
@@ -38,7 +38,7 @@ public class ConsoleOutputServiceTest {
     }
 
     @Test
-    public void printWithStringsArray() {
+    public void testPrintWithStringsArray() {
         outputService.print(STRINGS);
         String expected = Arrays.toString(STRINGS);
 
@@ -48,7 +48,7 @@ public class ConsoleOutputServiceTest {
     }
 
     @Test
-    public void printWithNULL() {
+    public void testPrintWithNULL() {
         outputService.print(notInitializedString);
         String expected = STRING_NULL;
 
